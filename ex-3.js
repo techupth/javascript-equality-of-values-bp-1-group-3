@@ -1,6 +1,7 @@
-function isPlainObject(value) {
+function isPlainObject(value){return value?.constructor === Object}
   // Start coding here
-}
+
+
 
 // Example case
 let result1 = isPlainObject({ name: "John" });
@@ -11,3 +12,5 @@ let result3 = isPlainObject(["apples", "oranges"]);
 console.log(result1); //true
 console.log(result2); // false
 console.log(result3); // false
+
+
