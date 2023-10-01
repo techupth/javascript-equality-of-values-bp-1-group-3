@@ -1,5 +1,13 @@
 function isPlainObject(value) {
-  // Start coding here
+  if(typeof(value) === 'object'){
+    return true
+  } else if(typeof(value) === 'array') {
+    return false
+  } else if(typeof(value) === 'null') {
+    return false
+  } else {
+    return "This is not an object."
+  }
 }
 
 // Example case
